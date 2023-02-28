@@ -13,12 +13,9 @@ body {
 }
 
 .box {
-    width          : 100vw;
-    height         : calc(100vh - 50px);
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    position       : relative;
+    width   : 100vw;
+    height  : calc(100vh - 50px);
+    position: relative;
 }
 
 svg {
@@ -34,23 +31,31 @@ svg {
 }
 
 .text {
-    color    : #fff;
-    font-size: 2em;
-    transform: translateX(20px) translateY(-30px);
-    position : absolute;
-}
-
-a.oi {
     width          : 100%;
     display        : flex;
     align-items    : center;
     justify-content: center;
     width          : 100%;
+    position       : absolute;
+    top            : 45%;
+    font-size      : 30px;
+    text-decoration: none;
+    color          : #fff;
+    padding-left: 30px;
+}
 
+a.clique {
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 100%;
+    position       : absolute;
+    top            : 50%;
+    text-decoration: none;
 }
 
 .clique-text {
-    position           : absolute;
     color              : #fff;
     letter-spacing     : 10px;
     /* background-color: red; */
