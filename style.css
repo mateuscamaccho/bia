@@ -22,14 +22,11 @@ body {
 }
 
 svg {
-    width            : 70%;
-    height           : 70%;
-    min-width        : 50%;
-    min-height       : 50%;
+    width            : 100%;
+    height           : 100%;
     fill             : transparent;
-    /* #65bbf2 */
     stroke           : black;
-    stroke-width     : 400px;
+    stroke-width     : 300px;
     stroke-dasharray : 2266;
     stroke-dashoffset: 0;
     animation        : 5s desenha infinite linear;
@@ -38,16 +35,26 @@ svg {
 
 .text {
     color    : #fff;
-    font-size: 3em;
+    font-size: 2em;
     transform: translateX(20px) translateY(-30px);
+    position : absolute;
 }
 
-a .clique {
-    transform: translateX(-200px);
-    position: absolute;
-    color   : #fff;
-    letter-spacing: 10px;
-    
+a.oi {
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 100%;
+
+}
+
+.clique-text {
+    position           : absolute;
+    color              : #fff;
+    letter-spacing     : 10px;
+    /* background-color: red; */
+    padding-left       : 50px;
 }
 
 footer {
