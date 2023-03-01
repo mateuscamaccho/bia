@@ -65,10 +65,19 @@
         // console.log(tamanhoTotalDoPath); // 2266.062744140625
 
 
+        var play = 0;
+
         const meuElemento = document.getElementById("clique");
         meuElemento.addEventListener("click", function () {
             const meuAudio = document.getElementById("meuAudio");
-            meuAudio.play();
+
+            if(play === 0) {
+                play = 1;
+                meuAudio.play();
+            } else if (play === 1) {
+                play = 0;
+                meuAudio.pause();
+            }
         });
 
     </script>
