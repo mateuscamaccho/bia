@@ -53,6 +53,7 @@ a.clique {
     position       : absolute;
     top            : 50%;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .clique-text {

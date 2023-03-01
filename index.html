@@ -36,13 +36,17 @@
             </span>
         </div>
 
-        <a href="https://www.youtube.com/watch?v=S95E-tAdyZk" class="clique">
+        <a id="clique" class="clique">
             <div class="clique-text">
                 clique aqui
             </div>
         </a>
 
     </div>
+
+    <audio id="meuAudio" style="display:none">
+        <source src="lapadadela.mp3" type="audio/mp3">
+    </audio>
 
     <footer>
         Feito com <span class="icon">&nbsp;❤&nbsp;</span> por &nbsp; <a href="https://mateuscamaccho.github.io"
@@ -58,7 +62,14 @@
         const tamanhoTotalDoPath = pathDoSVG.getTotalLength();
         tagSVG.style.setProperty('--tamanhoTotalDoPath', tamanhoTotalDoPath);
 
-        console.log(tamanhoTotalDoPath); // 2266.062744140625
+        // console.log(tamanhoTotalDoPath); // 2266.062744140625
+
+
+        const meuElemento = document.getElementById("clique");
+        meuElemento.addEventListener("click", function () {
+            const meuAudio = document.getElementById("meuAudio");
+            meuAudio.play();
+        });
 
     </script>
 </body>
